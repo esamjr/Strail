@@ -27,7 +27,7 @@ func Init() {
 		panic(err.Error())
 	}
 
-	db.AutoMigrate(&models.User{})
+	db.AutoMigrate(&models.User{}, &models.ShoppingList{})
 }
 
 // func for connect database

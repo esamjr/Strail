@@ -23,10 +23,10 @@ func GetUserByID(c echo.Context) error {
 	ID := c.Param("id")
 	db := db.ConnectDB()
 	users := []models.User{}
-	err := db.Where("id= ?", ID).Find(&users)
+	db.Where("id= ?", ID).Find(&users)
 
-	if err != nil {
-		return c.JSON(http.StatusBadRequest, err)
+	if users == nil {
+		return c.JSON(http.StatusNotFound, "Data Not Found")
 	}
 
 	return c.JSON(http.StatusOK, users)

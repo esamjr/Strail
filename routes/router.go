@@ -22,6 +22,13 @@ func Init() *echo.Echo {
 	e.PUT("/user/:id", api.UpdateUser)
 	e.DELETE("/user/del/:id", api.DeleteUser)
 
+	// Shopping List Endpoint
+	e.GET("/shopping", api.GetShoppingList)
+	e.GET("/shopping:id/", api.GetShoppingListByID)
+	e.POST("/shopping", api.CreateShoppingList)
+	e.PUT("/shopping/:id", api.UpdateShoppingList)
+	e.DELETE("/shopping/delete/:id", api.DeleteShoppingList)
+
 	return e
 
 }
