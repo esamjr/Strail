@@ -1,8 +1,8 @@
 # Strail
-##Features 
+## Features 
 - Shopping List
 - Login System
-##Soon 
+## Soon 
 - Schedule Calendar
 - To do List 
 
