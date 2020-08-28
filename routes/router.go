@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"strail/api"
 
+	"github.com/labstack/echo/middleware"
+
 	"github.com/labstack/echo"
 )
 
@@ -14,6 +16,10 @@ func Init() *echo.Echo {
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Welcome To Strail API")
 	})
+	// Middleware
+	e.Use(middleware.Logger())
+	e.Use(middleware.Recover())
+	e.Use(middleware.CORS())
 
 	// User Endpoint
 	e.GET("/user", api.GetUser)
@@ -21,6 +27,9 @@ func Init() *echo.Echo {
 	e.POST("/user", api.CreateUser)
 	e.PUT("/user/:id", api.UpdateUser)
 	e.DELETE("/user/del/:id", api.DeleteUser)
+
+	// Login
+	e.POST("/user/login/", api.Login)
 
 	// Shopping List Endpoint
 	e.GET("/shopping", api.GetShoppingList)

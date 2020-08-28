@@ -3,6 +3,7 @@ module strail
 go 1.15
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator v9.31.0+incompatible
@@ -13,4 +14,5 @@ require (
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/tkanos/gonfig v0.0.0-20181112185242-896f3d81fadf
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
+	google.golang.org/api v0.30.0 // indirect
 )
