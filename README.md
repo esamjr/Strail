@@ -1,9 +1,6 @@
-# Strail
+# Strail Beta 
 ## Features 
 - Shopping List
 - Login System
-## Soon 
-- Schedule Calendar
-- To do List 
-
+- Schedule
 ## Using Echo & GORM 
