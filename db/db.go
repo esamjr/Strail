@@ -27,7 +27,8 @@ func Init() {
 		panic(err.Error())
 	}
 
-	db.AutoMigrate(&models.User{}, &models.ShoppingList{})
+	db.AutoMigrate(&models.User{}, &models.ShoppingList{}, &models.Schedule{})
+	// db.Model(&models.Schedule{}).AddForeignKey("username", "users(username)", "CASCADE", "CASCADE")
 }
 
 // func for connect database

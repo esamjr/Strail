@@ -38,6 +38,13 @@ func Init() *echo.Echo {
 	e.PUT("/shopping/:id", api.UpdateShoppingList)
 	e.DELETE("/shopping/delete/:id", api.DeleteShoppingList)
 
+	// Schedule
+	e.GET("/schedule/", api.GetSchedule)
+	e.GET("/schedule:id/", api.GetScheduleByID)
+	e.POST("/schedule/", api.CreateSchedule)
+	e.PUT("/schedule/update/:id", api.UpdateSchedule)
+	e.DELETE("/schedule/delete/:id", api.DeleteSchedule)
+
 	return e
 
 }
