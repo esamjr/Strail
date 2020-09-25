@@ -1,5 +1,5 @@
-./bin/*
-./vendor/*
+bin/*
+vendor/*
 
-./config/prod.json
+config/prod.json
 Procfile
