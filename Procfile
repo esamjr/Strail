@@ -1,1 +1,1 @@
-"web: strail" 
+"web: bin/strail" 
