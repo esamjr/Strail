@@ -14,7 +14,7 @@ var err error
 
 func Init() {
 	configuration := config.GetConfig()
-	connect := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
+	connect := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=require",
 		configuration.DB_HOST,
 		configuration.DB_PORT,
 		configuration.DB_USER,

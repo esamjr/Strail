@@ -1,1 +1,1 @@
-web: bin/server-windows-386
+web: make all
