@@ -18,11 +18,11 @@ build: ## Compile the go files
 
 build-all: ## Compile the go files for multiple OS
 	@echo "Building go files for multiple OS..."
-	@GOOS=linux GOARCH=arm go build -o bin/server-linux-arm $(MAIN_SRC)
-	@GOOS=linux GOARCH=arm64 go build -o bin/server-linux-arm64 $(MAIN_SRC)
-	@GOOS=linux GOARCH=386 go build -o bin/server-linux-386 $(MAIN_SRC)
-	@GOOS=freebsd GOARCH=386 go build -o bin/server-freebsd-386 $(MAIN_SRC)
-	@GOOS=windows GOARCH=386 go build -o bin/server-windows-386 $(MAIN_SRC)
+	@go build -o bin/server-linux-arm $(MAIN_SRC)
+	@go build -o bin/server-linux-arm64 $(MAIN_SRC)
+	@go build -o bin/server-linux-386 $(MAIN_SRC)
+	@go build -o bin/server-freebsd-386 $(MAIN_SRC)
+	@go build -o bin/server-windows-386 $(MAIN_SRC)
 	@echo "Finished building"
 
 run: ## Runs the server

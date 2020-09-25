@@ -1,1 +1,1 @@
-web: make start
+web: go run server.go
