@@ -14,6 +14,6 @@ type Conf struct {
 // setuo database
 func GetConfig() Conf {
 	config := Conf{}
-	gonfig.GetConf("config/config.json", &config)
+	gonfig.GetConf("config/prod.json", &config) //Option *dev.json OR *prod.json
 	return config
 }

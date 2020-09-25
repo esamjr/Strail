@@ -1,0 +1,7 @@
+{
+    "DB_USER": "uyyojbwssnzupb",
+    "DB_PASSWORD": "dc8188e659e4325a652b7652d57134b1d890a33d5bbe7db62e56a71745e634af",
+    "DB_PORT": "5432",
+    "DB_HOST": "ec2-52-207-124-89.compute-1.amazonaws.com",
+    "DB_NAME": "dc0jg2c24l38p7"
+}

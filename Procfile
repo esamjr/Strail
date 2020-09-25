@@ -1,1 +1,1 @@
-"web: bin/strail" 
+web: bin/server-windows-386
