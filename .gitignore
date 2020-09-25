@@ -1,0 +1,6 @@
+bin/*
+!bin/.gitkeep
+vendor/*
+
+config/prod.json
+Procfile
