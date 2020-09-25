@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"os"
 	"strail/db"
 	"strail/routes"
@@ -10,7 +9,7 @@ import (
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		log.Fatal("$PORT must be set")
+		port = "8080"
 	}
 	db.Init()
 	e := routes.Init()

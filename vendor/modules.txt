@@ -18,6 +18,9 @@ github.com/jinzhu/gorm
 github.com/jinzhu/gorm/dialects/postgres
 # github.com/jinzhu/inflection v1.0.0
 github.com/jinzhu/inflection
+# github.com/joho/godotenv v1.3.0
+## explicit
+github.com/joho/godotenv
 # github.com/kr/pretty v0.1.0
 ## explicit
 # github.com/labstack/echo v3.3.10+incompatible
