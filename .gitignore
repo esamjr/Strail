@@ -1,6 +1,5 @@
-bin/*
-!bin/.gitkeep
-vendor/*
+./bin/*
+./vendor/*
 
-config/prod.json
+./config/prod.json
 Procfile
